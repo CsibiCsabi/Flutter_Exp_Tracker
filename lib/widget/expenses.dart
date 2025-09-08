@@ -1,4 +1,4 @@
-import 'dart:io';
+
 
 import 'package:expense_tracker/widget/add_expense_form.dart';
 import 'package:expense_tracker/widget/chart/chart.dart';
@@ -66,14 +66,9 @@ class _ExpensesState extends State<Expenses> {
     );
   }
 
-  
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-    if (Platform.isIOS){
-      print('IOS-en vagy');
-    } else
-      print('Andriod-on vagy');
     return Scaffold(
       appBar: AppBar(
         title: const Text('Sport Event Expense Tracker'),
